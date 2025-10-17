@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Software developer portfolio for assignments and showcasing projects.">
+  <meta name="color-scheme" content="light dark">
+  <title>Jing Cui · Software Developer</title>
+  <link rel="preload" href="assets/styles.css" as="style">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230090ff'/><text x='50' y='60' text-anchor='middle' font-size='60' fill='white' font-family='Arial'>J</text></svg>">
+</head>
+<body>
+  <!-- Animated background layers -->
+  <div class="bg-anim" aria-hidden="true">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-gradient"></div>
+  </div>
+  <!-- Assignment Disclaimer Banner -->
+  <aside class="banner" role="note" aria-label="Assignment disclaimer">
+    <p><strong>Temporary site for course marking.</strong> My primary portfolio is here:
+      <a href="#" aria-label="Primary portfolio (placeholder)">https://example.com</a>.
+      This site was created for an assignment and may be removed after grading.
+    </p>
+  </aside>
+
+  <header class="site-header container">
+    <div class="id-block">
+      <h1>Jing Cui</h1>
+      <p class="subtitle">Software Developer · Systems & Data · Problem Solver</p>
+      <ul class="quick-links">
+        <li><a href="#contact" class="btn">Contact</a></li>
+        <li><a href="#projects" class="btn btn-secondary">Projects</a></li>
+        <li><a href="assets/resume.pdf" class="btn" download>Download Résumé (PDF)</a></li>
+      </ul>
+    </div>
+    <nav class="nav">
+      <a href="#summary">Summary</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Résumé</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Summarizing Statement -->
+    <section id="summary" class="container section">
+      <h2>Summarizing Statement</h2>
+      <p>
+        I’m a software developer focused on building reliable systems and clean developer experiences.
+        Recent work spans <strong>data processing with Kafka</strong>, <strong>Java/Python backends</strong>, and
+        hands-on <strong>IT automation</strong>. I value clarity, performance, and maintainable code.
+      </p>
+      <ul class="highlights">
+        <li>Currently in co‑op / junior systems role; shipping automation that reduces toil.</li>
+        <li>Comfortable across the stack: Java, Python, PowerShell, Bash, and front-end basics.</li>
+        <li>Enjoy mentoring peers and documenting designs to make teams faster.</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="container section">
+      <h2>Education</h2>
+      <article class="card">
+        <header>
+          <h3>Mohawk College — Computer Systems Technician: Software Support (Co‑op)</h3>
+          <span class="meta">Hamilton, ON · Expected 2026</span>
+        </header>
+        <p>Coursework: Data structures & algorithms, Java/Python, networking, DevOps tooling, project management.</p>
+        <ul class="bullets">
+          <li>Recipient: Amcan Castings Ltd. Bursary.</li>
+          <li>Hands-on labs: Git, Linux, containers, CI, cloud fundamentals.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <header>
+          <h3>Georgia Tech — OMSCS (select coursework)</h3>
+          <span class="meta">Remote · Ongoing</span>
+        </header>
+        <p>Explored ML for Trading, large-scale data systems, and practical ML techniques used in production.</p>
+      </article>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Languages</h3>
+          <ul class="tags">
+            <li>Java</li><li>Python</li><li>PowerShell</li><li>Bash</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Frameworks & Tools</h3>
+          <ul class="tags">
+            <li>Kafka</li><li>Spring</li><li>JUnit</li><li>Git</li><li>Docker</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cloud & Infra</h3>
+          <ul class="tags">
+            <li>Azure</li><li>AWS</li><li>Linux</li><li>CI/CD</li><li>Networking</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Concepts</h3>
+          <ul class="tags">
+            <li>Data Pipelines</li><li>APIs</li><li>Testing</li><li>Observability</li><li>Security Basics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="card project">
+          <header>
+            <h3>Customer Service Time — Kafka Consumer</h3>
+            <span class="meta">Java · Python · Kafka</span>
+          </header>
+          <p>Implemented data processing algorithms for a Kafka consumer to aggregate and analyze service SLAs.
+             Improved processing throughput and created robust parsing with defensive validation.</p>
+          <ul class="bullets">
+            <li>Streamlined deserialization and error handling.</li>
+            <li>Added unit tests to lock down edge cases.</li>
+          </ul>
+          <footer>
+            <a class="btn btn-secondary" href="#" aria-disabled="true">Private Repo</a>
+          </footer>
+        </article>
+        <article class="card project">
+          <header>
+            <h3>Stripe Payment Card Validation System</h3>
+            <span class="meta">Python · Algorithms</span>
+          </header>
+          <p>Built a validator with Luhn checks, multi-network detection (Visa/Mastercard/Amex),
+             redacted card recovery, and corrupted digit correction heuristics.</p>
+          <ul class="bullets">
+            <li>Designed test corpus to measure precision/recall of corrections.</li>
+            <li>Modular pipeline for easy extension.</li>
+          </ul>
+          <footer>
+            <a class="btn" href="#" aria-disabled="true">Case Study (coming soon)</a>
+          </footer>
+        </article>
+        <article class="card project">
+          <header>
+            <h3>RabbitLineage</h3>
+            <span class="meta">Java · Data Structures</span>
+          </header>
+          <p>Modeled ancestry/descendant relations in rabbit populations with efficient graph traversals
+             and memoization for lineage queries.</p>
+          <ul class="bullets">
+            <li>Optimized ancestor lookups from O(n) to near O(1) average via caching.</li>
+            <li>Clear API and docs for classroom use.</li>
+          </ul>
+          <footer>
+            <a class="btn btn-secondary" href="#" aria-disabled="true">Demo (offline)</a>
+          </footer>
+        </article>
+        <article class="card project">
+          <header>
+            <h3>Subscription Timeline Notifications</h3>
+            <span class="meta">Java · Design</span>
+          </header>
+          <p>Implemented timeline logic for subscription events: welcome, upcoming expiration, expired,
+             plan changes, and renewals.</p>
+          <ul class="bullets">
+            <li>Comprehensive unit tests and state transition coverage.</li>
+          </ul>
+          <footer>
+            <a class="btn" href="#" aria-disabled="true">Read Design Notes</a>
+          </footer>
+        </article>
+        <article class="card project">
+          <header>
+            <h3>OrderOnline</h3>
+            <span class="meta">Spring · Hibernate · React · AntD</span>
+          </header>
+          <p>A full-stack online food ordering system. The backend is built with Spring (Spring MVC, Spring Security)
+             and Hibernate for data persistence. Exposes REST APIs for registration, menu search, ordering, and checkout.
+             The frontend is a React single-page app using Ant Design for UI components to provide shopping cart and
+             order placement flows.</p>
+          <ul class="bullets">
+            <li>Implemented REST endpoints with Spring MVC for user auth, menus, and orders.</li>
+            <li>Used Hibernate (JPA) for data access and modelling of menus and restaurants.</li>
+            <li>Secured the application with Spring Security for authentication and authorization.</li>
+            <li>Client built with React and Ant Design: cart management, menu browsing, and checkout UX.</li>
+          </ul>
+          <footer>
+            <a class="btn" href="#" aria-disabled="true">Private Repo / Demo</a>
+          </footer>
+        </article>
+        <article class="card project">
+          <header>
+            <h3>Booking</h3>
+            <span class="meta">React · Spring Boot · MySQL · Elasticsearch</span>
+          </header>
+          <p>An online stay rental application with a React frontend and Spring Boot backend. Supports stay upload,
+             deletion, search (including geo-based queries), and reservations. Media files are stored in Google Cloud Storage.</p>
+          <ul class="bullets">
+            <li>SPA frontend built with React and Ant Design for listing, search, and reservation flows.</li>
+            <li>Backend services implemented in Spring Boot with RESTful APIs and token-based authentication via Spring Security.</li>
+            <li>Persisted user data and stays in MySQL; used Elasticsearch to create geo-indexes for location-based search.</li>
+            <li>Media assets stored in Google Cloud Storage and referenced from stay records.</li>
+          </ul>
+          <footer>
+            <a class="btn btn-secondary" href="#" aria-disabled="true">Private Repo</a>
+          </footer>
+        </article>
+      </div>
+      <p class="note">Don’t have public projects yet? Replace any of the above with “pretend” projects that show how you’d design and build things.</p>
+    </section>
+
+    <!-- Resume (inline preview) -->
+    <section id="resume" class="container section">
+      <h2>Résumé</h2>
+      <p>Download a printable PDF or skim the highlights below.</p>
+      <ul class="resume-points">
+        <li>Junior Systems Administrator (Co‑op) — RLB Chartered Professional Accountants (2024–2025).</li>
+        <li>Built automation with PowerShell and Box APIs; improved onboarding workflows.</li>
+        <li>Kafka consumer algorithms; Java/Python data plumbing; testing and CI.</li>
+      </ul>
+      <p><a class="btn" href="assets/resume.pdf" download>Download PDF</a></p>
+    </section>
+
+    <!-- Contact Information -->
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <div class="contact-card card">
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-username">linkedin.com/in/your-username</a></p>
+        <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+          <label for="message">Quick message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Hello! I’d love to chat about..."></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Jing Cui · Built with HTML/CSS/JS · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
